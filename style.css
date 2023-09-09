@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    font-family: 'Amarante', cursive;
+    background-image: url(img/back.jpeg);
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Amarante', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 5vh;
+}
+
+.grid-item {
+    flex: 1;
+    padding: 1rem;
+    min-width: 265px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+}
+
+
+.grid-item h2 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.grid-item p {
+    text-align: center;
+    margin-top: 1vh;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    background-color: #212121;
+    font-family: 'Amarante', cursive;
+    color: #fff;
+}
+
+.img {
+    width: 100%;
+    height: 87%;
+    margin-top: 20px;
+    
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+#derek{
+    height: 50%;
+    margin-top: -20px;
+}
+.grid-item:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+  
+}
